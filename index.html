@@ -1,162 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vasco da Gama - O Gigante da Colina</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="vasco.css">
+    <title>Vasco da Gama | O Gigante da Colina</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vasco.css">
+  
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#historia">História</a>
-        </li>  <li class="nav-item">
-          <a class="nav-link" href="#artilheiros">Artilheiros</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#titulos">Títulos</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#contato">Contato</a>
-        </li>
-    </div>
-  </div>
-</nav>
-
-
-<header id="home">
-    <h1>Vasco da Gama</h1>
-    <h2>O Gigante da Colina</h2>
-</header>
-
-<section id="historia">
-    <h2>História</h2>
-
-     <div class="imagem">
-        <img src="escudosdovasco.png" alt="Escudos do Vasco da Gama">
-    </div>
-
-
-    <p>
-        A história do Vasco da Gama é, acima de tudo, uma crônica de coragem e justiça social no esporte brasileiro. Fundado em 1898 como um clube de regatas, o Vasco chocou a elite do futebol carioca na década de 1920 ao ser o primeiro grande clube a abrir as portas para jogadores negros, pardos e operários, formando os lendários "Camisas Negras". Quando os rivais tentaram banir o clube da liga exigindo que dispensasse seus atletas humildes, o Vasco respondeu com a histórica Resposta Histórica de 1924, recusando-se a discriminar seus heróis, e construiu com o suor de sua própria torcida o estádio de São Januário — na época o maior da América do Sul — para provar que o povo tinha o seu lugar de direito no topo do futebol.
-    </p>
-
-    <div class="imagem">
-        <video controls width="800" height="600">
-<source src="finalvasco.mp4" type="video/mp4">
-<track kind="subtitles" srclang="pt-br" src="finalvasco.vtt">
-
-
-    </div>
-
-    <p>
-No ano do seu centenário, o Vasco da Gama imortalizou-se como "O Gigante da Colina" ao conquistar a Libertadores de 1998 com uma campanha irretocável e repleta de simbolismo. Sob o comando de Antônio Lopes, o elenco liderado por ídolos como Mauro Galvão, Carlos Germano e a dupla letal Donizete e Luizão, superou gigantes brasileiros como Cruzeiro e Grêmio, além de protagonizar o histórico gol de falta de Juninho Pernambucano contra o River Plate no Monumental de Nuñez. A glória máxima foi selada no dia 26 de agosto de 1998, em Guayaquil, com uma vitória por 2 a 1 sobre o Barcelona do Equador, garantindo que o clube cruz-maltino celebrasse seus cem anos de fundação no topo do continente sul-americano.
-    </p>
-
-<h2> Hino do Vasco</h2>
-
-<div class="hino">
-<audio controls>
-<source src="hino-vasco-da-gama.mp3" type="audio/mpeg">
-</audio>
-
-
-</video></div>
-
-</section>
-
-<section id="artilheiros">
-    <h2>Maiores Artilheiros</h2>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
     <div class="container">
 
-        <div class="card">
-            <img src="dinamite.webp" alt="Roberto Dinamite">
-            <h3>Roberto Dinamite</h3>
-            <p>708 gols (recorde histórico)</p>
-        </div>
+        <a class="navbar-brand fw-bold" href="#">
+            CRVG
+        </a>
 
-        <div class="card">
-            <h3>Outros Artilheiros</h3>
-            <ol>
-                <li>Romário – 326 gols</li>
-                <li>Ademir – 301 gols</li>
-                <li>Pinga – 250 gols</li>
-                <li>Russinho – 230 gols</li>
-            </ol>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">História</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#artilheiros">Artilheiros</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#titulos">Títulos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#midia">Mídia</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+
+            </ul>
+
+            <button id="tema" class="btn btn-danger ms-3">
+                🌙 Modo Escuro
+            </button>
+
         </div>
 
     </div>
+
+</nav>
+
+<header class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>VASCO DA GAMA</h1>
+
+        <p>O Gigante da Colina</p>
+
+        <a href="#historia" class="btn btn-danger btn-lg">
+            Conheça a História
+        </a>
+
+    </div>
+
+</header>
+
+<section id="historia" class="container py-5">
+
+    <h2 class="titulo">História</h2>
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+            <img src="escudosdovasco.png" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-6">
+
+            <p>
+                Fundado em 1898, o Club de Regatas Vasco da Gama tornou-se um dos clubes mais importantes da história do futebol brasileiro.
+            </p>
+
+            <p>
+                O Vasco marcou o esporte nacional por sua luta contra o preconceito e pela inclusão social através da histórica Resposta Histórica de 1924.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="titulos">
+<section id="artilheiros" class="container py-5">
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Título</th>
-      <th scope="col">Data</th>
-      <th scope="col">Quantidade</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Libertadores</th>
-      <td>1998</td>
-      <td>1🏆</td>
-    </tr>
-    <tr>
-      <th scope="row">Campeonato Brasileiro</th>
-      <td>1974, 1989, 1997, 2000</td>
-      <td>4🏆</td>
-    </tr>
-    <tr>
-      <th scope="row">Copa do Brasil</th>
-      <td>2011</td>
-      <td>1🏆</td>
-    </tr>
-     <th scope="row">Campeonato Carioca</th>
-      <td>23, 24, 29, 34, 36, 45, 47, 49, 50, 52, 56, 58, 70, 77, 82, 87, 88, 92, 93, 94, 98, 03, 15, 16</td>
-      <td>24🏆</td>
-    </tr>
-  </tbody>
-</table>
+    <h2 class="titulo">Maiores Artilheiros</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="card jogador">
+
+                <img src="dinamite.webp" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h4>Roberto Dinamite</h4>
+
+                    <p>708 gols</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card jogador">
+
+                <div class="card-body">
+
+                    <h4>Romário</h4>
+
+                    <p>326 gols</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card jogador">
+
+                <div class="card-body">
+
+                    <h4>Ademir Menezes</h4>
+
+                    <p>301 gols</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="contato">
-    <h2>Contato</h2>
+<section id="titulos" class="container py-5">
+
+    <h2 class="titulo">Conquistas</h2>
+
+    <div class="contador">
+
+        <span id="numero">0</span>
+
+        <h4>Grandes Títulos</h4>
+
+    </div>
+
+    <table class="table table-dark table-striped mt-5">
+
+        <thead>
+
+            <tr>
+                <th>Título</th>
+                <th>Quantidade</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Libertadores</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>Brasileirão</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>Copa do Brasil</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>Carioca</td>
+                <td>24</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<section id="midia" class="container py-5">
+
+    <h2 class="titulo">Mídia</h2>
+
+    <div class="row g-4">
+
+        <div class="col-lg-6">
+
+            <video controls class="w-100 rounded">
+                <source src="finalvasco.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+        <div class="col-lg-6 text-center">
+
+            <h4>Hino do Vasco</h4>
+
+            <audio controls>
+                <source src="hino-vasco-da-gama.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contato" class="container py-5">
+
+    <h2 class="titulo">Contato</h2>
 
     <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea rows="5" placeholder="Seu feedback" required></textarea>
-        <button type="submit">Enviar</button>
+
+        <input class="form-control mb-3" type="text" placeholder="Nome">
+
+        <input class="form-control mb-3" type="email" placeholder="E-mail">
+
+        <textarea class="form-control mb-3" rows="5" placeholder="Mensagem"></textarea>
+
+        <button class="btn btn-danger">
+            Enviar
+        </button>
+
     </form>
+
 </section>
 
 <footer>
-    <p>Siga o Gigante nas redes sociais:</p>
 
-    <p>
-        <a href="https://www.instagram.com/vascodagama/" target="_blank">Instagram</a>
-        <a href="https://www.youtube.com/Vasco" target="_blank">YouTube</a>
-    </p>
+    <p>© 2026 - Club de Regatas Vasco da Gama</p>
 
-    <br>
-
-    <a href="https://sociogigante.com/" target="_blank">
-        <button>Seja Sócio Torcedor</button>
-    </a>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="vasco.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
