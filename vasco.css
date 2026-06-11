@@ -1,207 +1,113 @@
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to bottom right, #000000, #242424, #000000);
+    font-family:'Segoe UI',sans-serif;
+    background:#0d0d0d;
     color:white;
+    transition:.4s;
 }
 
-nav{
-    background:#0f0f0f;
-    padding:20px;
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
+.navbar{
+    background:#111;
 }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:40px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#b60f0f;
-}
-
-header{
+.hero{
     height:100vh;
-    background:url("saojanuario.webp") center/cover no-repeat;
+    background:url("imagens/saojanuario.webp") center center/cover;
+    position:relative;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
 }
 
-header h1{
-    font-size:50px;
-    color:#b60f0f;
-    font-style:italic;
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
 }
 
-header h2{
-    margin-top:15px;
-    font-size:25px;
+.hero-content{
+    position:relative;
+    z-index:2;
 }
 
-section{
-    padding:100px 20px;
-    max-width:1100px;
-    margin:auto;
+.hero h1{
+    font-size:5rem;
+    font-weight:900;
 }
 
-#home{
-    margin-top:80px;
+.hero p{
+    font-size:1.5rem;
 }
 
-section h2{
+.titulo{
     text-align:center;
-    margin-bottom:30px;
-    color:#b60f0f;
-    font-size:30px;
+    color:#d40000;
+    margin-bottom:50px;
 }
 
-p{
-    line-height:1.6;
-    text-align:justify;
-    margin-bottom:20px;
-}
-
-.imagem{
-    display:flex;
-    justify-content:center;
-    margin:30px 0;
-}
-
-img{
-    width:350px;
-    max-width:100%;
-    border-radius:20px;
-    border:2px solid #b60f0f;
-}
-
-.container{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-    margin-top:30px;
-}
-
-.card{
+.jogador{
     background:#1a1a1a;
-    padding:20px;
-    width:300px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 0 15px rgba(182,15,15,0.4);
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:scale(1.05);
-}
-
-.card img{
-    width:100%;
-    border-radius:15px;
-}
-
-.card h3{
-    margin-top:15px;
-}
-
-.titulos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-    gap:20px;
-    text-align:center;
-}
-
-.titulo-box{
-    background:#111;
-    padding:20px;
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.titulo-box:hover{
-    background:#b60f0f;
-}
-
-form{
-    display:flex;
-    flex-direction:column;
-    max-width:400px;
-    margin:auto;
-    gap:15px;
-}
-
-input, textarea{
-    padding:10px;
-    border-radius:5px;
     border:none;
-}
-
-button{
-    background:#b60f0f;
     color:white;
-    padding:10px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    transition:0.3s;
+    transition:.3s;
 }
 
-button:hover{
-    background:white;
-    color:black;
+.jogador:hover{
+    transform:translateY(-10px);
+}
+
+.contador{
+    text-align:center;
+}
+
+#numero{
+    font-size:5rem;
+    color:#d40000;
+    font-weight:bold;
 }
 
 footer{
-    background:#0f0f0f;
+    background:#111;
     text-align:center;
-    padding:40px 20px;
-    margin-top:50px;
+    padding:30px;
 }
 
-footer a{
-    color:#b60f0f;
-    text-decoration:none;
+.claro{
+    background:#f4f4f4;
+    color:#000;
 }
 
-li{
-   display: flex;
-    padding: 0;
-    margin-bottom: 20px;
+.claro .navbar{
+    background:#ffffff;
 }
 
-table{
-margin-left: auto;
-margin-right: auto;
+.claro .jogador{
+    background:#fff;
+    color:#000;
 }
 
-.hino{
-text-align: center;
+.claro footer{
+    background:#ddd;
 }
 
-html {
-    scroll-behavior: smooth;
-    font-family: 'Segoe UI', sans-serif;
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
 }
